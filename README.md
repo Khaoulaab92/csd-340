@@ -1,2 +1,4 @@
-# csd-340
-Web Development With HTML and CSS Repository 
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* John Woods
++ Khaoula Azdoud
