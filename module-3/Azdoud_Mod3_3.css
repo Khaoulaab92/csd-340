@@ -1,0 +1,53 @@
+/* Khaoula Azdoud */
+/* 08/20/2023 */
+/* Assignment 3.3: Build a Webpage Exercise, Part 3 */
+
+
+h1 {
+    text-align: center;
+}
+
+.left-div {
+    width: 45%;
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+    float: left;
+}
+.right-div {
+    width: 45%;
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+    float: right;
+}
+
+.last-div {
+  width: 100%;
+  margin-top: 60%;
+  float: right;
+  margin-bottom: 20px;
+
+}
+
+h3{
+  font-weight: 500;
+}
+
+ol{
+  font-weight: 300;
+  list-style-position: inside;
+  list-style-type: decimal;
+}
+
+ul{
+  font-weight: 300;
+  list-style-position: inside;
+  list-style: upper-roman;
+}
+a { 
+    text-decoration: none; 
+}
+a:hover {
+    text-decoration: underline;
+}
