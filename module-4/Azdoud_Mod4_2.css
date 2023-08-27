@@ -1,0 +1,45 @@
+/* Khaoula Azdoud */
+/* 08/25/2023 */
+/* Assignment 4.2: Build a Webpage Exercise, Part 4 */
+
+#image-gallery{
+	display: grid;
+	grid-template-columns: auto auto auto;
+	margin-top: 10%;
+}
+
+.image-item {
+	border: 1px solid rgba(255,0,0,0.7);
+}
+
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+h1, h3, figcaption {
+    color: rgba(255,0,0,0.7);
+}
+
+
+.landing-page {
+    text-align: right;
+    margin-top: 60%;
+    margin-bottom: 20%;
+    position: absolute;
+    right: 20px;
+}
+
+
