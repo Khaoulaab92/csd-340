@@ -2,7 +2,7 @@
 /* 08/25/2023 */
 /* Assignment 4.2: Build a Webpage Exercise, Part 4 */
 
-#image-gallery{
+#image-gallery {
 	display: grid;
 	grid-template-columns: auto auto auto;
 	margin-top: 10%;
