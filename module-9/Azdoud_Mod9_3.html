@@ -1,0 +1,52 @@
+<!-- Khaoula Azdoud-->
+<!-- 09/15/2023-->
+<!-- Assignment 9.3: JavaScript Exercise, Part 1-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>CSD 340 Development with HTML and CSS</title>
+    <link rel="stylesheet" type="text/css" href="Azdoud_Mod9_3.css">
+    <meta name="author" content="Khaoula Azdoud">
+
+    <script>
+        var firstVariableValue = "Casablanca";
+        var secondVariableValue = "Orlando";
+        var thirdVariableValue = "second";
+        var fourthVariableValue = "hobbies";
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9. 3: JavaScript - Part 1</h1>
+        <h2>Chapter 1: Khaoula Azdoud Introduction</h2>
+        <p class="intro">I'm Khaoula Azdoud, proud to call Casablanca, Morocco my hometown. Growing up amidst the captivating blend of modernity and tradition in this vibrant city has been a defining part of my identity. From the iconic Hassan II Mosque to the bustling medinas and lively cafes, Casablanca's unique charm has left an indelible mark on my heart. The rich culture, warm community, and dynamic atmosphere have all contributed to shaping who I am today. As I journey through life, I carry with me the spirit of <span id="Casablanca">__________</span>, a constant reminder of my roots and the city's enduring impact on my perspective and values.</p>
+        <p>In December 2016, I embarked on a journey to the United States and found my new home in the heart of <span id="Orlando">__________</span>. As a proud mother of two incredible girls, aged 5 and 3, my days are filled with the joy and laughter they bring. Orlando's vibrant energy, diverse culture, and the enchantment of being close to Disney have all woven themselves into the fabric of our lives, creating unforgettable experiences and cherished memories.</p>
+        <p>I also come from a close-knit family of three brothers and two sisters, and being the <span id="second">__________</span> child, I've learned the value of both leading and supporting, shaping who I am today.</p>
+        <p>In my free time, I indulge in my passions: crafting delicious dishes through cooking and baking, while also finding solace and adventure in the pages of books. These <span id="hobbies">__________</span> bring a wonderful balance of flavors and stories to my life, enriching each day with creativity and knowledge.</p>
+    </div>
+    <p>
+        <button type="button" 
+        onclick="document.getElementById('Casablanca').innerHTML = firstVariableValue">Casablanca</button> <br />
+    </p>
+    <p>
+        <button type="button" 
+        onclick="document.getElementById('Orlando').innerHTML = secondVariableValue">Orlando</button> <br />
+    </p>
+    <p>
+        <button type="button" 
+        onclick="document.getElementById('second').innerHTML = thirdVariableValue">second</button> <br />
+    </p>
+    <p>
+        <button type="button" 
+        onclick="document.getElementById('hobbies').innerHTML = fourthVariableValue">hobbies</button> 
+    </p>
+    <hr />
+    <address>
+        <a href="https://www.bellevue.edu/">Bellevue University</a><br><br>
+        1000 Galvin Road South<br><br>
+        Bellevue, NE 68005
+    </address>
+</body>
+</html>
+
