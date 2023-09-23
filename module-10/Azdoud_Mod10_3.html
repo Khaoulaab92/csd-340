@@ -1,0 +1,55 @@
+<!-- Khaoula Azdoud-->
+<!-- 09/23/2023-->
+<!-- Assignment 10.3: JavaScript Exercise, Part 2-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <script>
+        function changeImage(imageId, currentSrc, newSrc) {
+            var image = document.getElementById(imageId);
+            if (image.src.endsWith(currentSrc)) {
+                image.src = newSrc;
+            } else {
+                image.src = currentSrc;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Assignment 10. 3: JavaScript - Part 2</h1>
+    <div>
+      <img id="image1" src="summer1.png" onclick="changeImage('image1', 'summer1.png', 'winter1.png')" />
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='green'; this.style.fontWeight='bold';"
+         onmouseout="this.style.color='black'; this.style.fontWeight='normal';">
+
+      Click On The Image to Change The Season.
+      <br />
+      Run Your Mouse Over The Text To Change The Color.
+      <br />
+
+    </div>
+    <br />
+    <div>
+      <img id="image2" src="summer2.png" onclick="changeImage('image2', 'summer2.png', 'winter2.png')" />
+    </div>
+    <br />
+    <div
+         onmouseover="this.style.color='green'; this.style.fontWeight='bold';"
+         onmouseout="this.style.color='black'; this.style.fontWeight='normal';">
+
+      Click On The Image to Change The Season.
+      <br />
+      Run Your Mouse Over The Text To Change The Color.
+      <br />
+
+    </div>
+
+
+</body>
+</html>
