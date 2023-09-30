@@ -1,0 +1,82 @@
+<!-- Khaoula Azdoud-->
+<!-- 09/29/2023-->
+<!-- Assignment 11.2: JavaScript Exercise, Part 3-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <script>
+        const todoList = [];
+
+        function add() {
+            const input = document.getElementById("inputText");
+            const task = input.value;
+            if (task !== "") {
+                const index = todoList.length + 1;
+                todoList.push(task);
+                alert(`${task} Is Added To Task ${index} In Your To Do List`);
+                input.value = "";
+            }
+        }
+
+        function deleteLastEntry() {
+            if (todoList.length > 0) {
+                const confirmDelete = confirm("Press Ok If You Want To Delete The Last Task! Press Cancel To Choose The Task You Want To Delete");
+                if (confirmDelete) {
+                    const index = todoList.length;
+                    const deletedTask = todoList.pop();
+                    alert(`Your Last Task ${index}: ${deletedTask} Is Deleted`);
+                    display();
+                } else {
+                    deleteTask();
+                }
+            } else {
+                alert("The To Do List is empty!");
+            }
+        }
+
+        function deleteTask() {
+            const index = prompt("Enter the number of the task you want to delete:")
+            if (index != null && index >= 1 && index <= todoList.length) {
+                const deletedTask = todoList.splice(index - 1, 1);
+                alert(`Task ${index}: ${deletedTask} Is Deleted`);
+                display();
+            } else {
+                alert("Invalid task number or the To Do List is Empty!");
+            }
+        }
+
+        function display() {
+            const displayList = document.getElementById("DisplayList");
+
+            if (todoList.length == 0) {
+                displayList.innerHTML = "The To Do List is Empty!";
+            } else {
+                displayList.innerHTML = "";
+
+                todoList.forEach((task, index) => {
+                    const labeledTask = `Task ${index + 1}: ${task}`;
+                    displayList.innerHTML += labeledTask + "<br>";
+                });
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Assignment 11. 2: JavaScript - Part 3</h1>
+
+    <p>This is an interactive To Do List. Type in your task in the text box, then click Add. <br> Click the Display button to see all the tasks in the To-Do List. <br>Click on Delete Last Entry if you'd like to delete the last task or to delete a task from the list</p>
+    <br>
+    <input type="text" id="inputText">
+    <button onclick="add()">Add</button>
+    <button onclick="deleteLastEntry()">Delete Last Entry</button>
+    <button onclick="display()">Display</button>
+    <br>
+    <br>
+    <hr />
+    <p id="DisplayList"></p>
+</body>
+</html>
+
